@@ -10,8 +10,35 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
+        {
+          name: 'description',
+          content:
+            'MIT CS grad, experienced FE dev. Focusing on mobile, React Native, UX design, user growth, and building a great team culture.',
+        },
         { name: 'keywords', content: 'sample, something' },
+        // <!--Twitter -->
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@groundcontrol' },
+        {
+          name: 'twitter:title',
+          content: 'Rafael Mendiola - Software Developer',
+        },
+        {
+          name: 'twitter:description',
+          content:
+            'MIT CS grad, experienced FE dev. Focusing on mobile, React Native, UX design, user growth, and building a great team culture.',
+        },
+        { name: 'twitter:image', content: 'http://www.raf.fm/img/profile.jpg' },
+
+        // <!-- Facebook -->
+        { name: 'og:url', content: 'http://www.raf.fm' },
+        { name: 'og:title', content: 'Rafael Mendiola - Software Developer' },
+        {
+          name: 'og:description',
+          content:
+            'MIT CS grad, experienced FE dev. Focusing on mobile, React Native, UX design, user growth, and building a great team culture.',
+        },
+        { name: 'og:image', content: 'http://www.raf.fm/img/profile.jpg' },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
