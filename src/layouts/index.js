@@ -40,8 +40,7 @@ const Layout = ({ children, data }) => (
         },
         { name: 'og:image', content: 'http://www.raf.fm/img/profile.jpg' },
       ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    />    
     <div
       style={{
         margin: '0 auto',

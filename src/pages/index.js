@@ -1,5 +1,7 @@
 import React from 'react'
-import profileImage from '../img/profile.jpg';
+import profileImage from '../img/profile.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { css } from 'react-emotion'
 
 const Links = () => {
   return (
@@ -62,4 +64,34 @@ const IndexPage = () => (
   </div>
 )
 
-export default IndexPage
+const myStyle = css`
+  background-color: red;
+`
+
+const Main = () => {
+  return (
+    // <div class="vertical-center">
+    //   <div class="container">
+    //     <div class="row">
+    //       <div class="col-sm-4 info-column">
+    //         <div class="row">
+    //           <div class="col-sm-12 col-xs-4">
+    //             <img class="img-rounded profile-image" src={profileImage} />
+    //           </div>
+    //           <div class="col-sm-12 col-xs-8">
+    //             <h2>
+    //               Rafael Mendiola
+    //               <br />
+    //               <small>Software Developer</small>
+    //             </h2>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className={["vertical-center", myStyle]}></div>
+  )
+}
+
+export default Main
